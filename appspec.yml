@@ -4,9 +4,9 @@ files:
   - source: /index.html
     destination: /var/www/html/
   - source: /icon-microphone.png
-    destination: /
+    destination: /var/www/
   - source: /backpacks.png
-    destination: /
+    destination: /var/www/
 hooks:
   BeforeInstall:
     - location: scripts/install_dependencies
