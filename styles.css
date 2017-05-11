@@ -1,0 +1,151 @@
+body {
+  align-items: center;
+  background: #000;
+  display: flex;
+  font-family: 'Lato', sans-serif;
+  justify-content: center;
+}
+
+a {
+  color: #99f;
+}
+
+a:hover {
+  color: #88f;
+}
+
+.ad {
+  background: #fff;
+  background-image: url("backpacks.jpg");
+  background-size: cover;
+  background-position: right;
+  display: flex;
+  flex-direction: column;
+  height: 560px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 320px;
+}
+
+.header {
+  background: #37b;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.header-top {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  width: 100%;
+}
+
+.title {
+  color: #fff;
+  font-size: 150%;
+  letter-spacing: 2px;
+  margin: 6px;
+}
+
+.learn-more, .ask-button {
+  background: #f93;
+  color: #fff;
+  cursor: pointer;
+  margin-left: auto;
+  margin-top: 4px;
+  padding: 4px 8px 4px 8px;
+  transform: translateX(-6px);
+  transition: background .2s;
+}
+
+.learn-more:hover {
+  background: #5d8;
+}
+
+.description {
+  color: #fff;
+  margin: 4px 8px 4px 8px;
+}
+
+.chatbar {
+  align-items: center;
+  background: #fff;
+  display: flex;
+  flex-direction: row;
+  margin-top: auto;
+}
+
+.mic-icon {
+  cursor: pointer;
+  height: 26px;
+  margin-left: auto;
+  width: 18px;
+}
+
+.ask-button {
+  margin-bottom: 2px;
+}
+
+.input-field {
+  border: 1px solid #000;
+  height: 24px;
+  margin-left: 3px;
+  padding-left: 3px;
+  width: 68%;
+}
+
+.chat-window {
+  background: rgba(255, 255, 255, .8);
+  display: none;
+  flex-direction: column;
+  height: 458px;
+  overflow-y: scroll;
+  width: 100%;
+}
+
+.chat-window.open {
+  display: flex;
+}
+
+.chat-bubble, .sending-bubble {
+  border-radius: 16px;
+  color: #fff;
+  height: auto;
+  margin: 4px 4px 0px 4px;
+  opacity: 1;
+  padding: 4px 12px 4px 12px;
+  transform: translateY(0px);
+  transition: transform .4s, opacity .4s;
+  width: 250px;
+}
+
+.sending-bubble {
+  transform: translateY(-60px);
+  opacity: 0;
+}
+
+.chat-bubble.sent {
+  align-self: flex-start;
+  background: #46f;
+  border-bottom-left-radius: 0;
+}
+
+.chat-bubble.got {
+  align-self: flex-end;
+  background: #f35;
+  border-bottom-right-radius: 0;
+}
+
+.chat-bubble > img {
+  height: 120px;
+  width: auto;
+  transition: height .2s;
+}
+
+.chat-bubble > img:hover {
+  height: 250px;
+  width: auto;
+}
