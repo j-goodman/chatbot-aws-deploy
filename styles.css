@@ -16,7 +16,7 @@ a:hover {
 
 .ad {
   background: #fff;
-  background-image: url("backpacks.jpg");
+  background-image: url("https://joystickinteractive.github.io/retail-bot-demo/backpacks.jpg");
   background-size: cover;
   background-position: right;
   display: flex;
