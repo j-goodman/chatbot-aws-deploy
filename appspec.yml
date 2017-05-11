@@ -3,10 +3,8 @@ os: linux
 files:
   - source: /index.html
     destination: /var/www/html/
-  - source: /icon-microphone.png
-    destination: /var/www/
-  - source: /backpacks.png
-    destination: /var/www/
+  - source: /cue.html
+    destination: /var/www/html/
 hooks:
   BeforeInstall:
     - location: scripts/install_dependencies
