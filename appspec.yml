@@ -3,8 +3,7 @@ os: linux
 files:
   - source: /index.html
     destination: /var/www/html/
-  - source: /cue.html
-    destination: /var/www/html/
+  - source: /backpacks.png
 hooks:
   BeforeInstall:
     - location: scripts/install_dependencies
